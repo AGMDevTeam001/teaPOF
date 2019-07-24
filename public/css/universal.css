@@ -1,0 +1,228 @@
+/* Universal */
+.tc {
+	text-align: center;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tr {
+	text-align: right;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.cb {
+	clear: both;
+}
+
+.fwb {
+	font-weight: bold;
+}
+
+.tdu {
+	text-decoration: underline;
+}
+
+.fsi {
+	font-style: italic;
+}
+
+.ttc {
+	text-transform: capitalize;
+}
+
+.ttu {
+	text-transform: uppercase;
+}
+
+.ttl {
+	text-transform: lowercase;
+}
+
+.fillScreen {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1, 1, 1, 0.41);
+}
+.content-header{
+  font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 45px;
+}
+
+.section-content{
+  text-align: center; 
+
+}
+.contact-section{
+  padding-top: 40px;
+}
+.contact-section .col-md-6{
+  width: 50%;
+}
+
+.form-line{
+  border-bottom: 1px solid #B29999;
+  width:100%;
+  padding-bottom:20px;
+}
+
+.form-group{
+  margin-top: 10px;
+}
+ul{
+	list-style-type: none;
+}
+.submit{
+  font-size: 1.1em;
+  text-align:center;
+  width: 150px;
+  color: #fff;
+
+}
+.text-info{
+ margin-bottom:10px;
+ } 
+#textAlign {text-align: left;}
+#userAccess{
+	margin-top:10px;
+	padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #013571;	
+}
+
+.radio-group label {
+   overflow: hidden;
+} .radio-group input {
+    /* This is on purpose for accessibility. Using display: hidden is evil.
+    This makes things keyboard friendly right out tha box! */
+   height: 1px;
+   width: 1px;
+   position: absolute;
+   top: -20px;
+} .radio-group .not-active  {
+   color: #3276b1;
+   background-color: #fff;
+}
+
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1); 
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+    /* margin: 1px 0 0; */
+    /* line-height: normal; */
+  /* margin-top:30px; */
+}
+
+label.btn span {
+  font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color: #7AA3CC;
+}
+
+
+
+button {
+  border: none;
+  cursor: pointer;
+  color: red ;
+  padding: 15px 40px;
+  border-radius: 2px;
+  font-size: 22px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #2196F3;
+}
+
+/* Ripple magic */
+button, a{
+  position: relative;
+  overflow: hidden;
+}
+
+button:after, a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+button:focus:not(:active)::after ,a:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+.modal-title {
+    margin: 0;
+    text-align: initial;
+}

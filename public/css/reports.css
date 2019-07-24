@@ -1,0 +1,287 @@
+/*general body*/
+
+.panel.with-nav-tabs .panel-body.main-body{
+	background-color: #80808045;
+}
+
+/*tab content - panel heading generate*/
+
+.tab-pane .input-group-addon,
+.tab-pane.training .panel-speaker .input-group-addon{
+	background-color: #013571;
+    color: #fffefe;
+}
+.tab-pane.training .input-group-addon{
+	background-color: #1d9e85;
+    color: #fffefe;
+}
+.btn-generate,
+.btn-print{
+	border: 1px solid #16A085;
+	background-color: #fff;
+	color: #16A085;
+	transition: .5s ease;
+}
+.btn-generate:hover,
+.btn-print:hover{
+	background-color: #16A085;
+	color: #fff;
+}
+.form-inline{
+	margin-top: 14px;
+}
+.input-align .input-group:nth-child(2),
+.input-align .input-group:nth-child(3),
+.button-align{
+	text-align: center;
+}
+.button-align button{
+	width: 200px;
+}
+.input-align .input-group:nth-child(2),
+.input-align .input-group:nth-child(3),
+.speaker .button-align button,
+.training .button-align button{
+	margin-top: 7px;
+}
+
+/*------------------------------------margin------------------------------------*/
+/*margin*/
+.m-10{
+	margin: 10px;
+}
+.m-20{
+	margin: 20px;
+}
+.m-30{
+	margin: 30px;
+}
+.m-40{
+	margin: 40px;
+}
+/*margin of elements*/
+.hr-divider{
+	margin: 25px;
+}
+/*margin-top*/
+.mt-10{
+	margin-top: 10px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.mt-40{
+	margin-top: 40px;
+}
+/*margin all sides*/
+.mxy-0{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+/*---------------------------------------------padding-------------------------------*/
+/*padding all*/
+.p-10{
+	padding: 10px;
+}
+.p-20{
+	padding: 20px;
+}
+.p-30{
+	padding: 30px;
+}
+.p-40{
+	padding: 40px;
+}
+/*padding top*/
+.pt-10{
+	padding-top: 10px;
+}
+.pt-20{
+	padding-top: 20px;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.pt-40{
+	padding-top: 40px;
+}
+
+/*-------------------------------------forms-------------------------------------*/
+.evalSum-container .form-horizontal .control-label{
+	text-align:left;
+}
+/*-------------------------------------text-area------------------------------------*/
+.evalSum-container textarea{
+	resize: none!important;
+}
+.evalSum-container textarea.form-control{
+	min-height: 70px;
+}
+/*------------------------------------inputs----------------------------------------*/
+.evalSum-container input[type="text"]{
+	margin-top: 0px;
+}
+/*------------------------------------table----------------------------------------*/
+.eval-guidelines-holder .tbl-sub-topic{
+	background-color: #407888;
+}
+.eval-guidelines-holder .tbl-total{
+	background-color: #a1a7a9;
+}
+.eval-guidelines-holder .table>thead>tr>th{
+	font-size: 15px;
+}
+
+/*-----------------------------------font size------------------------------------------*/
+.evalSum-container .eval-title{
+	font-size: 18px;
+}
+
+/*----------------------------------------color------------------------------------*/
+.label-color{
+	color: #336E7B;
+}
+.eval-guidelines-holder .tbl-sub-topic{
+	color: #e1e9ea;
+}
+.eval-guidelines-holder .tbl-total{
+	color: #313135;
+}
+
+
+/*-----------------------------------font-family------------------------------*/
+
+.evalSum-container .eval-title,
+.event-container .eval-title
+{
+	font-family: 'roboto','sans-serif';
+}
+
+/*-------------------------------------font-weight---------------------*/
+.bold{
+	font-weight: 900;
+}
+
+/*panel*/
+.training .panel.panel-speaker{
+	margin-bottom: 5px;
+}
+
+.tblEventStyle div.dataTables_wrapper div.dataTables_info {
+	text-align: left;
+}
+
+.modal-footer-pad {
+	border: 1px solid #fff;
+	padding: 10px;
+	text-align: right;
+}
+
+
+@media only screen and (min-width: 320px){
+	.button-align button{
+		width: 150px;
+	}
+	.evalSum-container .eval-title{
+		font-size: 15px;
+	}
+}
+@media only screen and (min-width: 360px){
+	.evalSum-container .eval-title{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.button-align,
+	.input-align{
+		text-align: center;
+	}
+	select,
+	input{
+		min-width: 230px;
+	}
+	.button-align button{
+		width: 200px;
+	}
+	.input-align .input-group:nth-child(2){
+		margin-top: 0px;
+	}
+	.input-align .input-group:nth-child(3),
+	.button-align{
+		margin-top: 14px;
+	}
+
+	.evalSum-container input[type="text"]{
+		margin-top: 5px;
+	}
+	.evalSum-container textarea.form-control{
+		min-height: 80px;
+	}
+	.evalSum-container .eval-title{
+		font-size: 30px;
+	}
+	.hr-divider{
+		margin: 30px;
+	}
+	
+}
+@media only screen and (min-width: 992px){
+	.button-align,
+	.input-align{
+		text-align: center;
+	}
+	.button-align{
+		margin-top: 14px;
+	}
+	.input-align .input-group:nth-child(3){
+		margin-top: 0px;
+	}
+	.button-align button{
+		width: 200px;
+	}
+
+	.evalSum-container input[type="text"]{
+		margin-top: 0px;
+	}
+	.evalSum-container textarea.form-control{
+		min-height: 90px;
+	}
+
+	.evalSum-container .eval-title{
+		font-size: 36px;
+	}
+	.hr-divider{
+		margin: 35px;
+	}
+	.training .button-align button{
+		margin-top: 0px!important;
+	}
+
+}
+@media only screen and (min-width: 1200px){
+	.button-align{
+		float: right;
+		margin-top: 0px;
+	}
+	.input-align{
+		text-align: left;
+	}
+	.button-align button{
+		width: 133px;
+	}
+	.button-align button{
+		margin-top: 0px;
+	}
+	.evalSum-container textarea.form-control{
+		min-height: 100px;
+	}
+	.hr-divider{
+		margin: 40px;
+	}
+}
